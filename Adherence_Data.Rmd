@@ -1,0 +1,75 @@
+---
+title: "MIPS Adherence"
+author: "Sam Kuhn"
+date: "2/28/2020"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = TRUE,
+                      cache = TRUE, warning = FALSE)
+library(tidyverse)
+library(readxl)
+library(knitr)
+library(kableExtra)
+```
+
+```{r, include=FALSE}
+df_19 <- read_csv("C:/Users/Sam/Desktop/Projects/MIPS_Measures/2019_MIPS_Data_CSV.csv", col_names = TRUE)
+df_18 <- read_csv("C:/Users/Sam/Desktop/Projects/MIPS_Measures/2018_MIPS_Data_CSV.csv", col_names = TRUE)
+```
+
+## Variable Descriptions
+
+  + Measure_ID = ID # For measure
+  + Average = Average Adherence Rate
+
+## Tobacco
+
+```{r}
+tobacco <- df_18 %>% 
+  filter(Measure_ID == 226)
+kable(tobacco[, 2:7], booktabs = TRUE) %>% kable_styling(latex_options = "scale_down")
+```
+
+## BMI
+
+```{r}
+bmi <- df_19 %>% 
+  filter(Measure_ID == 128)
+kable(bmi[, 2:7], booktabs = TRUE) %>% kable_styling(latex_options = "scale_down")
+```
+
+## HIV
+
+```{r}
+df_19 %>% 
+  filter(Measure_ID == 205)
+```
+
+## Shingles
+
+```{r}
+df_19 %>% 
+  filter(Measure_ID == 474)
+```
+
+## Advanced Care
+
+```{r}
+adv_care <- df_19 %>% 
+  filter(Measure_ID == 47) 
+kable(adv_care[, 2:7], booktabs = TRUE) %>% kable_styling(latex_options = "scale_down")
+```
+
+## Medical Records
+
+```{r}
+med_records <- df_19 %>% 
+  filter(Measure_ID == 130)
+kable(med_records[, 2:7], booktabs = TRUE) %>% 
+  kable_styling(latex_options = "scale_down")
+```
+

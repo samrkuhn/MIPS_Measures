@@ -1,0 +1,27 @@
+﻿Table 1: Column Descriptions for the MIPS Benchmark Results worksheet,
+,
+Physical Column Name,Description
+Measure_Name,Name\Title of the Measure
+Measure_ID,ID of the Measure
+Collection_Type,"Identifies whether the benchmark applies to Medicare Part B Claims measures, electronic clinical quality measures (eCQMs), MIPS clinical quality measures (MIPS CQMs), or QCDR measures. 
+CMS Web Interface measures use Shared Savings Program benchmarks.   https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/sharedsavingsprogram/Downloads/2019-quality-benchmarks-guidance.pdf."
+Measure_Type,Measure Type
+Benchmark,"Indicates whether or not a measure is included in the benchmark analysis. Y = Yes, the measure is included in benchmark analysis
+N = No, the measure is not included in benchmark analysis"
+Standard Deviation,Standard Deviation of performance rate(s)
+Average,Average performance rate(s)
+Decile 3,The  lower and upper bound of decile 3 data range
+Decile 4,The  lower and upper bound of decile 4 data range
+Decile 5,The  lower and upper bound of decile 5 data range
+Decile 6,The  lower and upper bound of decile 6 data range
+Decile 7,The  lower and upper bound of decile 7 data range
+Decile 8,The  lower and upper bound of decile 8 data range
+Decile 9,The  lower and upper bound of decile 9 data range
+Decile 10,Decile 10 open ended data range
+Topped_Out,"Indicates whether or not a measure is topped out for the 2019 performance period. 
+Y = Yes, the measure is topped out
+N = No, the measure is not topped out
+'--' = The measure has no historic benchmark for 2019"
+SevenPointCap_PY19,"Indicates whether or not a Topped Out Measure will receive special scoring. 
+Y=Yes, the measure cannot earn more than 7 points. 
+N=No, the measure is not capped and can earn up to 10 points. "
